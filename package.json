@@ -1,0 +1,41 @@
+{
+  "name": "automated-tests",
+  "version": "1.0.0",
+  "description": "manomano automated tests POC",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "node ./index.js",
+    "dev": "HEADLESS=false node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pOxaes/automated-tests.git"
+  },
+  "author": "Hugo Pievic",
+  "license": "ISC",
+  "dependencies": {
+    "expect-puppeteer": "^2.0.1",
+    "gherkin-jest": "^0.18.0",
+    "jest": "^22.4.2",
+    "jest-puppeteer-preset": "^2.0.1",
+    "puppeteer": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-cucumber": "^1.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.4",
+    "prettier": "^1.6.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": "eslint"
+    }
+  }
+}
