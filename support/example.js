@@ -26,5 +26,6 @@ cucumber.defineRule(
   'I can see {string} in the results',
   async (world, resultString) => {
     await expect(world.page).toMatchElement('a', { text: resultString });
+    await world.browser.close();
   }
 );
