@@ -9,7 +9,8 @@ module.exports = {
   plugins: ['prettier', 'cucumber'],
   globals: {
     window: true,
-    jasmine: true
+    jasmine: true,
+    document: true
   },
   rules: {
     'prettier/prettier': ['error', { singleQuote: true }],
